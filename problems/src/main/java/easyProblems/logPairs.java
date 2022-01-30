@@ -10,20 +10,20 @@ public class logPairs {
 
     public static void main(String[] args) {
 
-        int n;
+        int numbersCount;
         int[] input ;
 
         Scanner sc = new Scanner(System.in);    //System.in is a standard input stream
         System.out.println("enter total count input");
-        n = sc.nextInt();
-        input = new int[n];
+        numbersCount = sc.nextInt();
+        input = new int[numbersCount];
         System.out.print("Enter the numbers ");
-        for(int i=0;i<n; i++){
+        for(int i=0;i<numbersCount; i++){
             input[i]=sc.nextInt();
         }
 
-        for (int j=0;j<n;j++){
-            for (int k=n-1;k>-1;k--){
+        for (int j=0;j<numbersCount;j++){
+            for (int k=numbersCount-1;k>-1;k--){
                 System.out.println(input[j]+" "+input[k]);
             }
         }
