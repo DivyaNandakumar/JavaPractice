@@ -18,6 +18,7 @@ public class containsCommonItem {
     3. there might be more than one common
     4. best case scenario both have the common item in start
     5. worst case both have item in end
+    6. inputs are strings? integers or mix of anything?
 
     Queries:
     1. is the arrays sorted? if no can we sort them on any basis?((O(nlogn))
@@ -27,5 +28,6 @@ public class containsCommonItem {
     1. Brute force : iterate through each item one by one with nexted for loops (O(n^2))
     2. sort the arrays using radix O(nk) or counting sort O(n+k) and then do binary search for each element
     from the first element in both array that is larger as the smaller one wont be present in the other array obviously O(logn)
-     */
+    3. we can convert one of the array as a Hashset and call the contains() (time complexity is O(1)) for each array.
+    */
 }
