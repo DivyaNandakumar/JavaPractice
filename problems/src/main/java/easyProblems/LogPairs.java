@@ -2,7 +2,7 @@ package easyProblems;
 
 import java.util.Scanner;
 
-public class logPairs {
+public class LogPairs {
 
     //create possible pairs from the inputs
     //time Complexity : O(n^2)

@@ -2,7 +2,7 @@ package easyProblems;
 
 import java.util.Arrays;
 
-public class reverseString {
+public class ReverseString {
 
     static String reverse(String str) {
 

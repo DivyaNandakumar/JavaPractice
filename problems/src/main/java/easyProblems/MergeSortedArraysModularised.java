@@ -1,6 +1,6 @@
 package easyProblems;
 
-public class mergeSortModularised {static int[] array1 = {1, 2, 3, 5, 9, 67,71,77, 89};
+public class MergeSortedArraysModularised {static int[] array1 = {1, 2, 3, 5, 9, 67,71,77, 89};
     static int[] array2 = {2,5, 7, 67,90};
     static int[] sortedarray1 =new int[array1.length+array2.length];
 
