@@ -1,6 +1,4 @@
-package easyProblems;
-
-import java.util.Arrays;
+package Arrays;
 
 public class ReverseString {
 
