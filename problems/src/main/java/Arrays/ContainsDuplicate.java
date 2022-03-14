@@ -31,19 +31,21 @@ Constraints:
 
      */
 
-
+// if without set then first sort it with quicksort or merge sort and then
+//when the adjacent element is equal then its true
+    //complexity will be nlogn
     public static void main(String args[]){
         int[] array1={1,4,5,6,8,9,0};
-        Set<Integer> duplicatecheck=new HashSet<Integer>();
+        Set<Integer> duplicatecheck=new HashSet<>();
         int index=0;
         for(index=0;index<array1.length;index++){
             if(!duplicatecheck.add(array1[index])){
-                System.out.println("false");
+                System.out.println("true");
                 break;
             }
         }
         if(index>=array1.length) {
-            System.out.println("true");
+            System.out.println("false");
         }
     }
 }
