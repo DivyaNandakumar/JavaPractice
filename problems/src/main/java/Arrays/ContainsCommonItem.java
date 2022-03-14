@@ -1,5 +1,7 @@
 package Arrays;
 
+import java.util.*;
+
 public class ContainsCommonItem {
     /* Question
     Given 2 arrays create a function that let's a user know (true/ false)
@@ -30,4 +32,25 @@ public class ContainsCommonItem {
     from the first element in both array that is larger as the smaller one wont be present in the other array obviously O(logn)
     3. we can convert one of the array as a Hashset and call the contains() (time complexity is O(1)) for each array.
     */
+
+
+    static boolean checkCommon(String[] array1, String[] array2) {
+
+        int index=0;
+        Set<String> set=new HashSet<>(Arrays.asList(array1));
+        for (index = 0; index < array2.length; index++) {
+            if (set.contains(array2[index])){
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static void main(String[] args){
+        String[] str1={"a","b","c","f"};
+        String[] str2={"g","t","w","h"};
+        System.out.println(checkCommon(str1,str2));
+    }
+
 }
